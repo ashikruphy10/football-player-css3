@@ -17,8 +17,8 @@
     transform: scale(1);
 }
 /* using hover */
-.top-part:hover img {
-    /* transform: scale(.75) skew(180deg); */
+.imageing:hover  {
+    transform: scale(1.1) skew(-30deg);
 }
 /* top-part-heading */
 .top-heading{
@@ -42,6 +42,7 @@
 ::placeholder{
     color: white;
 }
+/* player photo */
 .photo-album{
 
     display: grid;
@@ -62,7 +63,7 @@
 .photo-frame{
     width: 300px;
     height: 478px;
-    border: 1px solid red;
+    border: 2px solid wheat;
  margin-left: 50px;
 }
 .last-section{
@@ -75,4 +76,12 @@
 }
 .fab{
     color: navajowhite;
+}
+@media only screen and(max-width:688px) {
+   .photo-album{
+       background-color: white;
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+}
+
 }
